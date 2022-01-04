@@ -234,22 +234,6 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 fi
 
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A '
-alias l='ls -CF '
-alias ls='lsd'
-alias htb='kali-treecd /home/ransomsec/.../ctf/htb'
-alias tools='kali-treecd /home/ransomsec/.../tools'
-alias maldir='kali-treecd /home/ransomsec/.../malware'
-alias pydir='kali-treecd /home/ransomsec/.../python_learning '
-alias bb='cd /home/ransomsec/.../bb_program'
-alias ctf='cd /home/ransomsec/.../ctf '
-alias thm='cd /home/ransomsec/.../ctf/thm'
-alias fortune='fortune | lolcat'
-# alias mkcd='mkdir $1; cd $1'
-alias pycheck='nuclei -t $HOME/nuclei-templates/file/python/python-scanner.yaml -u $1'
-
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
