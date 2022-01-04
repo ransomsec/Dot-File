@@ -1,2 +1,2 @@
 # Dot-File
-For personal OS setup. ;)
+For personal system setup. ;)
