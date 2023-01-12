@@ -26,8 +26,6 @@ endif
 
 -- where a value with no key simply has an implicit numeric key
 
-
-
 local config = {
 
     -- Configure AstroNvim updates
@@ -253,7 +251,6 @@ local config = {
             -- Custom Plugins!
             --
             { "christoomey/vim-tmux-navigator" },
-            -- { "windwp/nvim-autopairs" },
             { "folke/tokyonight.nvim" },
             { "RRethy/vim-illuminate" },
             { "xiyaowong/nvim-cursorword" },
