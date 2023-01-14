@@ -254,6 +254,7 @@ local config = {
             { "folke/tokyonight.nvim" },
             { "RRethy/vim-illuminate" },
             { "xiyaowong/nvim-cursorword" },
+            { "eandrju/cellular-automaton.nvim" },
 
             -- {
             --   "ray-x/lsp_signature.nvim",
