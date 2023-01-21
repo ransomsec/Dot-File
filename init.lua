@@ -107,6 +107,9 @@ local config = {
         "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
+        "",
+        "",
+        "        root@nvim:~# ./ransomsec",
     },
 
     -- Default theme configuration
