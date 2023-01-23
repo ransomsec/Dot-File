@@ -8,7 +8,7 @@
 --
 
 -- neovide configuration
-vim.opt.guifont = { "Agave Nerd Font", ":h16" }
+vim.opt.guifont = { "Fira Code", ":h14" }
 vim.cmd([[
     if exists("g:neovide")
         let g:neovide_scroll_animation_length = 0.3
