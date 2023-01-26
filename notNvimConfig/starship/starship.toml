@@ -5,12 +5,11 @@ charging_symbol = "🔌"
 discharging_symbol = "⚡"
 
 [[battery.display]]
-threshold = 30
+threshold = 60
 style = "bold red"
 
 [character]
 error_symbol = "[✖](bold red) "
-
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
@@ -46,6 +45,11 @@ deleted = " 🗑️  ×${count}"
 style = "bright-white"
 format = "$all_status$ahead_behind"
 
+[sudo]
+style = 'bold red'
+symbol = 'sudo cached!'
+disabled = false
+
 [hostname]
 ssh_only = false
 format = "<[$hostname]($style)>"
@@ -68,19 +72,43 @@ disabled = false
 symbol = " "
 disabled = false
 
+[perl]
+style = ' '
+detect_extensions = ['pl', 'pm', 'pod']
+
+
 [python]
 format = "[$symbol$version]($style) "
 style = "bold green"
+
+[c]
+symbol = " "
+detect_extensions = ['c','h','cpp']
+style = "bold blue"
+
+[localip]
+ssh_only = false
+style = 'bold blue'
+disabled = false
 
 [rust]
 format = "[$symbol$version]($style) "
 style = "bold green"
 
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = false
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
 [time]
 # time_format = "%a, %b %d | %I:%M%P ️"
-time_format = "%I:%M%P ️"
+time_format = "%I:%M %P"
 # time_format = "%T"
-format = "🕙 $time($style) "
+format = "⌚ $time($style) "
 style = "bright-white"
 disabled = false
 
@@ -93,3 +121,4 @@ show_always = true
 
 [nodejs]
 format = "via [🤖 $version](bold green) "
+
