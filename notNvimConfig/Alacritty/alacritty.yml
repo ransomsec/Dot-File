@@ -66,7 +66,7 @@ scrolling:
   #multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-auto_scroll: true
+ auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -466,7 +466,10 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Beam
+  style: 
+    shape: Block
+    blinking: Always
+  blink_interval: 480
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
