@@ -66,7 +66,7 @@ local config = {
     options = {
         opt = {
             -- set to true or false etc.
-            shiftwidth = 4, -- Number of space inserted for indentation
+            shiftwidth = 2, -- Number of space inserted for indentation
             relativenumber = true, -- sets vim.opt.relativenumber
             number = true, -- sets vim.opt.number
             spell = false, -- sets vim.opt.spell
